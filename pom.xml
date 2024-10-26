@@ -8,6 +8,10 @@
         <version>3.3.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <modules>
+        <module>carservice</module>
+        <module>bookingservice</module>
+    </modules>
     <groupId>com.alexannd</groupId>
     <artifactId>bookingsystem</artifactId>
     <version>0.0.1-SNAPSHOT</version>
