@@ -23,6 +23,7 @@ pipeline {
             steps {
                 script {
                     // Run Maven build command
+                    sh 'cd bookingservice'
                     sh 'mvn clean install'
                 }
             }
