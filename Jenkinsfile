@@ -52,23 +52,23 @@ pipeline {
             }
         }
 
-        stage('Push Changes to GitHub') {
-            steps {
-                script {
-                    withCredentials([usernamePassword(credentialsId: "${env.GIT_CREDENTIALS_ID}",
-                                                    usernameVariable: 'GIT_USERNAME',
-                                                    passwordVariable: 'GIT_PASSWORD')]) {
-                        sh '''
-                            git config user.name "phucanhprono1"
-                            git config user.email "anhnnp.b19cn029@stu.ptit.com.vn"
-                            git add .
-                            git diff --quiet && git diff --staged --quiet || git commit -m "Automated commit by Jenkins pipeline"
-                            git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/ducanhptitb19cn028/bookingsystem.git main
-                        '''
-                    }
-                }
-            }
-        }
+//         stage('Push Changes to GitHub') {
+//             steps {
+//                 script {
+//                     withCredentials([usernamePassword(credentialsId: "${env.GIT_CREDENTIALS_ID}",
+//                                                     usernameVariable: 'GIT_USERNAME',
+//                                                     passwordVariable: 'GIT_PASSWORD')]) {
+//                         sh '''
+//                             git config user.name "phucanhprono1"
+//                             git config user.email "anhnnp.b19cn029@stu.ptit.com.vn"
+//                             git add .
+//                             git diff --quiet && git diff --staged --quiet || git commit -m "Automated commit by Jenkins pipeline"
+//                             git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/ducanhptitb19cn028/bookingsystem.git main
+//                         '''
+//                     }
+//                 }
+//             }
+//         }
     }
 
     post {
