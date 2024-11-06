@@ -2,13 +2,14 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven' // Make sure Maven is installed and configured in Jenkins (e.g., "Maven 3.6.3")
-        jdk 'JDK' // Make sure JDK 11 is installed and configured in Jenkins
+        maven 'Maven' // Ensure Maven is configured in Jenkins
+        jdk 'JDK' // Ensure JDK is configured in Jenkins
     }
 
     environment {
+        JAVA_HOME = '/opt/java/openjdk' // Set the path to your JDK installation
         GITHUB_REPO = 'https://github.com/ducanhptitb19cn028/bookingsystem.git'
-        GIT_CREDENTIALS_ID = 'github-credentials' // Set this to the ID of your GitHub credentials in Jenkins
+        GIT_CREDENTIALS_ID = 'github-credentials' // Ensure this ID is correct
     }
 
     stages {
@@ -61,3 +62,4 @@ pipeline {
         }
     }
 }
+
