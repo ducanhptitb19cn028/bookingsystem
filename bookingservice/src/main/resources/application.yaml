@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: FileStorageService
+
+  datasource:
+    url: jdbc:postgresql://192.168.0.123:5433/filestorage_api?encrypt=true&trustServerCertificate=true&useUnicode=true&characterEncoding=UTF-8
+    username: postgres
+    password: postgres
+
