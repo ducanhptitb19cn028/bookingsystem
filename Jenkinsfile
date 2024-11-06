@@ -41,8 +41,8 @@ pipeline {
             steps {
                 script {
                     // Configure Git user
-                    sh 'git config user.name "Jenkins"'
-                    sh 'git config user.email "jenkins@example.com"'
+                    sh 'git config user.name "phucanhprono1"'
+                    sh 'git config user.email "anhnnp.b19cn029@stu.ptit.com.vn"'
 
                     // Add, commit, and push any changes made by the pipeline
                     sh 'git add .'
