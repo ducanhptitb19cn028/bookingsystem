@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-aarch64' // Set the path to your JDK installation
+        JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-arm64' // Set the path to your JDK installation
         GITHUB_REPO = 'https://github.com/ducanhptitb19cn028/bookingsystem.git'
         GIT_CREDENTIALS_ID = 'github-credentials' // Ensure this ID is correct
     }
